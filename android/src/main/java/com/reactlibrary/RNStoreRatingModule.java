@@ -8,11 +8,12 @@ import com.facebook.react.bridge.Callback;
 import android.net.Uri;
 import android.content.Intent;
 import java.util.HashMap;
+import java.util.Map;
 
 public class RNStoreRatingModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
-  private final int IS_AVAILABLE = "isAvailable";
+  private final String IS_AVAILABLE = "isAvailable";
 
   public RNStoreRatingModule(ReactApplicationContext reactContext) {
     super(reactContext);
@@ -50,7 +51,8 @@ public class RNStoreRatingModule extends ReactContextBaseJavaModule {
 
   private void openWebPage() {
     String appPackage = this.reactContext.getPackageName();
-    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackage));
+    Intent intent = new Intent(Intent.ACTION_VIEW,
+        Uri.parse("https://play.google.com/store/apps/details?id=" + appPackage));
     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     this.reactContext.startActivity(intent);
   }
