@@ -3,11 +3,11 @@
 
 ## Getting started
 
-`$ npm install react-native-store-rating --save`
+`$ npm install react-native-store-rate --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-store-rating`
+`$ react-native link react-native-store-rate`
 
 ### Manual installation
 
