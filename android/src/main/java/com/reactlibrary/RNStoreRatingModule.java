@@ -7,6 +7,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 import android.net.Uri;
 import android.content.Intent;
+import java.util.HashMap;
 
 public class RNStoreRatingModule extends ReactContextBaseJavaModule {
 
